@@ -6,7 +6,6 @@ export async function middleware(req) {
   const token = await getToken({ req, secret: process.env.JWT_SECRET });
 
   const { pathname } = req.nextUrl;
-  console.log(pathname);
 
   // Redirect if token exists
   if (pathname == "/login" && token) {
