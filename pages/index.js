@@ -1,5 +1,6 @@
 import Sidebar from "../components/Sidebar";
 import Center from "../components/Center";
+import { getSession } from "next-auth/react";
 
 export default function Home() {
   return (
@@ -12,4 +13,3 @@ export default function Home() {
     </div>
   );
 }
- 
